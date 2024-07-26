@@ -1,33 +1,21 @@
 import java.io.*;
-
 class Switch {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t;
         t = Integer.parseInt(br.readLine());
         while(t-- > 0){
-            
             int n;
-            n = Integer.parseInt(br.readLine());
-            
-            
+            n = Integer.parseInt(br.readLine());  
             int m;
-            m = Integer.parseInt(br.readLine());
-            
+            m = Integer.parseInt(br.readLine()); 
             String res = Swit.compareNM(n, m);
-            
             System.out.println(res);
-            
         }
     }
 }
-
-
-// } Driver Code Ends
-//User function Template for Java
 class Swit {
     public static String compareNM(int n, int m) {
-        // code here
         if(n==m)
         {
             return "equal";

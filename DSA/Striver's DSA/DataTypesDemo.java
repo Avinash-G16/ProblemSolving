@@ -21,7 +21,6 @@ class DataTypesDemo {
 
 class Solution {
     static int dataTypeSize(String str) {
-        // code here
         switch (str) {
             case "Character":
                 return 1;
