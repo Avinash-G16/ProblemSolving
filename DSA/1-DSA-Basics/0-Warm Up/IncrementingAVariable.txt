@@ -1,0 +1,4 @@
+1 - Solve On GFG If Exist
+2 - Solve On Leetcode If Exist
+3 - Read Articles For Other Solutions On GFG Or Leetcode and Write Down The Good/Best Solutions to Local Code Base
+4 - Revise Local Code Base and Move To Next Problem
