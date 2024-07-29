@@ -16,7 +16,7 @@ public class MergeSort
     }
     static void merge(int[] array, int low, int mid, int high)
     {
-        ArrayList<Integer> temp = new ArrayList<Integer>();
+        ArrayList<Integer> temp = new ArrayList<Integer>(){};
         int i = low;
         int j = mid+1;
         while(i<=mid && j<=high)
@@ -49,26 +49,26 @@ public class MergeSort
     }
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter array size: ");
-        int n = sc.nextInt();
-        System.out.println("Enter array elements: ");
-        int[] array = new int[n];
-        for(int i=0; i<n; i++)
-        {
-            array[i] = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter array size: ");
+            int n = sc.nextInt();
+            System.out.println("Enter array elements: ");
+            int[] array = new int[n];
+            for(int i=0; i<n; i++)
+            {
+                array[i] = sc.nextInt();
+            }
+            System.out.println("Before sorting: ");
+            for(Integer a : array)
+            {
+                System.out.print(a+" ");
+            }
+            mergeSort(array, 0, n-1);
+            System.out.println("\nAfter sorting: ");
+            for(Integer a : array)
+            {
+                System.out.print(a+" ");
+            }
         }
-        System.out.println("Before sorting: ");
-        for(Integer a : array)
-        {
-            System.out.print(a+" ");
-        }
-        mergeSort(array, 0, n-1);
-        System.out.println("\nAfter sorting: ");
-        for(Integer a : array)
-        {
-            System.out.print(a+" ");
-        }
-        sc.close();
     }
 }

@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Fibonacci {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		sc.close();
+            int n;
+            try (Scanner sc = new Scanner(System.in)) {
+                n = sc.nextInt();
+            }
 		int fib = fibo(n);
 		System.out.println(fib);
 	}

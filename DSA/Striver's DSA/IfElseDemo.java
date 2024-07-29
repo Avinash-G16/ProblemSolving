@@ -1,5 +1,5 @@
 import java.io.*;
-class IfElseDemo {
+public class IfElseDemo {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t;

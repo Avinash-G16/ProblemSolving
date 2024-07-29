@@ -4,11 +4,11 @@ public class CountDigits
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int cd = countDigits(n);
-        System.out.println(cd);
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            int cd = countDigits(n);
+            System.out.println(cd);
+        }
     }
     static int countDigits(int n)
     {
